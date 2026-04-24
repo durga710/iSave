@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		949C8717AA1913D010A1E945 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C9C0491DABE8AFA6BE017 /* ContentView.swift */; };
+		12CBDB1EC5BE141C2E2C9912 /* PayoffEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2F87C69A030414D5256E3 /* PayoffEngine.swift */; };
+		9B104B9974C97A476C9820AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DAEEF9B778E9F568413D6 /* Models.swift */; };
+		A0AB361208BA39308D5C3C0E /* PlaidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E713D24EF3E18BF54A056 /* PlaidManager.swift */; };
+		36BD0C1968766DFFF8CE27D0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F17BC42430451BB6C1F6699 /* APIService.swift */; };
+		C7C1B466320F05ED1FA4480C /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B63C8E671CCB376BA9178D6 /* KeychainHelper.swift */; };
+		4620F8285932012E1D9163C2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FA36AF9DCE25AE9784414 /* AuthViewModel.swift */; };
+		F8C73FE5B312AFE9E1065B65 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369EB1B1444C9A0B9A93E19A /* CategoryViewModel.swift */; };
+		10F9694CE0A97191CF011DDE /* CreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E43678B5E9BDCF26F87744 /* CreditCardViewModel.swift */; };
+		A8BE343042D3427C869F750C /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D422FEE2088B4C0BA73C76 /* TransactionViewModel.swift */; };
+		9F0FAEEFE4F17653AF2DAA87 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AB1E983545E9E6F80AD61 /* UserPreferencesViewModel.swift */; };
+		037540D805A5BCD00A0890C4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B003D1E42CCDC531297DC /* LoginView.swift */; };
+		D242AEF9420576A176331777 /* AddEditCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC3A9F4DC345003411D672 /* AddEditCategoryView.swift */; };
+		F31EFFCACFCD4306B5B47D8F /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E6AA280EECB9042E2D617 /* BudgetView.swift */; };
+		A2474DE1749464CE8DC4D0A9 /* AddEditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76ED3537060D031347801CD /* AddEditCardView.swift */; };
+		0BBC6FE2DB46B54EDBAFB96D /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07FCE3E3934318CD1B7F16 /* CardListView.swift */; };
+		C0E5E24F6831E3B6E5931890 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBB18658E1BBD05BF918B /* DashboardView.swift */; };
+		20959B52307F75F6AF1FB292 /* PayoffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E993A172C23AED66B43B23A /* PayoffView.swift */; };
+		9F8CD4408757E2747961F55E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D09E9042F76E3D335014292 /* SettingsView.swift */; };
+		E5173AA3DF606C0BFF9DA973 /* AddEditTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC549922B4D6710077A3DA36 /* AddEditTransactionView.swift */; };
+		D1C42E7A7BC90245E910AAC4 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203F163F3878346B86E1F13 /* TransactionListView.swift */; };
+		3E26ACA447F507FF4D737535 /* iSaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E684FF16238F5ADB38CC92 /* iSaveApp.swift */; };
+		95F893ABF8DE2704294E63B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A78D72E86ED53EA5CDE1200 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		317C9C0491DABE8AFA6BE017 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView.swift"; path = "ContentView.swift"; sourceTree = "<group>"; };
+		81A2F87C69A030414D5256E3 /* PayoffEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PayoffEngine.swift"; path = "Engine/PayoffEngine.swift"; sourceTree = "<group>"; };
+		DB3DAEEF9B778E9F568413D6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Models.swift"; path = "Models/Models.swift"; sourceTree = "<group>"; };
+		3E3E713D24EF3E18BF54A056 /* PlaidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlaidManager.swift"; path = "Plaid/PlaidManager.swift"; sourceTree = "<group>"; };
+		5F17BC42430451BB6C1F6699 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "APIService.swift"; path = "Services/APIService.swift"; sourceTree = "<group>"; };
+		6B63C8E671CCB376BA9178D6 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "KeychainHelper.swift"; path = "Services/KeychainHelper.swift"; sourceTree = "<group>"; };
+		E66FA36AF9DCE25AE9784414 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AuthViewModel.swift"; path = "ViewModels/AuthViewModel.swift"; sourceTree = "<group>"; };
+		369EB1B1444C9A0B9A93E19A /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CategoryViewModel.swift"; path = "ViewModels/CategoryViewModel.swift"; sourceTree = "<group>"; };
+		B6E43678B5E9BDCF26F87744 /* CreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CreditCardViewModel.swift"; path = "ViewModels/CreditCardViewModel.swift"; sourceTree = "<group>"; };
+		38D422FEE2088B4C0BA73C76 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionViewModel.swift"; path = "ViewModels/TransactionViewModel.swift"; sourceTree = "<group>"; };
+		FF7AB1E983545E9E6F80AD61 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserPreferencesViewModel.swift"; path = "ViewModels/UserPreferencesViewModel.swift"; sourceTree = "<group>"; };
+		3D3B003D1E42CCDC531297DC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LoginView.swift"; path = "Views/Auth/LoginView.swift"; sourceTree = "<group>"; };
+		1FAC3A9F4DC345003411D672 /* AddEditCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AddEditCategoryView.swift"; path = "Views/Budget/AddEditCategoryView.swift"; sourceTree = "<group>"; };
+		A04E6AA280EECB9042E2D617 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BudgetView.swift"; path = "Views/Budget/BudgetView.swift"; sourceTree = "<group>"; };
+		E76ED3537060D031347801CD /* AddEditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AddEditCardView.swift"; path = "Views/Cards/AddEditCardView.swift"; sourceTree = "<group>"; };
+		3B07FCE3E3934318CD1B7F16 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CardListView.swift"; path = "Views/Cards/CardListView.swift"; sourceTree = "<group>"; };
+		3ECDBB18658E1BBD05BF918B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DashboardView.swift"; path = "Views/Dashboard/DashboardView.swift"; sourceTree = "<group>"; };
+		9E993A172C23AED66B43B23A /* PayoffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PayoffView.swift"; path = "Views/Payoff/PayoffView.swift"; sourceTree = "<group>"; };
+		6D09E9042F76E3D335014292 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsView.swift"; path = "Views/Settings/SettingsView.swift"; sourceTree = "<group>"; };
+		FC549922B4D6710077A3DA36 /* AddEditTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AddEditTransactionView.swift"; path = "Views/Transactions/AddEditTransactionView.swift"; sourceTree = "<group>"; };
+		B203F163F3878346B86E1F13 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionListView.swift"; path = "Views/Transactions/TransactionListView.swift"; sourceTree = "<group>"; };
+		F7E684FF16238F5ADB38CC92 /* iSaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "iSaveApp.swift"; path = "iSaveApp.swift"; sourceTree = "<group>"; };
+		3A78D72E86ED53EA5CDE1200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185E4B3D00122287C06829AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2678F494CC29BA8E2F0C4643 /* iSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iSave.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E872B0C4F3AB11D258C39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A85897F1A32FE9B91C081CD = {
+			isa = PBXGroup;
+			children = (
+				3DFE442710E429386E53D077 /* iSave */,
+				B88D7E26791946AEFDCC8BB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B88D7E26791946AEFDCC8BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2678F494CC29BA8E2F0C4643 /* iSave.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DFE442710E429386E53D077 /* iSave */ = {
+			isa = PBXGroup;
+			children = (
+				317C9C0491DABE8AFA6BE017 /* ContentView.swift */,
+				F7E684FF16238F5ADB38CC92 /* iSaveApp.swift */,
+				F867080DDDCAA8CC74A91BE2 /* Views */,
+				F3533A2279EAD65233E99B38 /* ViewModels */,
+				5B2C9EB197B369544D30EFD8 /* Plaid */,
+				BC8E6A5FDB0FEE50AF1B10E7 /* Models */,
+				FA1196890D421541891D17B1 /* Services */,
+				CFD3981E9993F4D47575002C /* Engine */,
+				3A78D72E86ED53EA5CDE1200 /* Assets.xcassets */,
+				185E4B3D00122287C06829AA /* Info.plist */,
+			);
+			name = iSave;
+			path = iSave;
+			sourceTree = "<group>";
+		};
+		CFD3981E9993F4D47575002C /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				81A2F87C69A030414D5256E3 /* PayoffEngine.swift */,
+			);
+			name = "Engine";
+			sourceTree = "<group>";
+		};
+		BC8E6A5FDB0FEE50AF1B10E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DAEEF9B778E9F568413D6 /* Models.swift */,
+			);
+			name = "Models";
+			sourceTree = "<group>";
+		};
+		5B2C9EB197B369544D30EFD8 /* Plaid */ = {
+			isa = PBXGroup;
+			children = (
+				3E3E713D24EF3E18BF54A056 /* PlaidManager.swift */,
+			);
+			name = "Plaid";
+			sourceTree = "<group>";
+		};
+		FA1196890D421541891D17B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F17BC42430451BB6C1F6699 /* APIService.swift */,
+				6B63C8E671CCB376BA9178D6 /* KeychainHelper.swift */,
+			);
+			name = "Services";
+			sourceTree = "<group>";
+		};
+		F3533A2279EAD65233E99B38 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E66FA36AF9DCE25AE9784414 /* AuthViewModel.swift */,
+				369EB1B1444C9A0B9A93E19A /* CategoryViewModel.swift */,
+				B6E43678B5E9BDCF26F87744 /* CreditCardViewModel.swift */,
+				38D422FEE2088B4C0BA73C76 /* TransactionViewModel.swift */,
+				FF7AB1E983545E9E6F80AD61 /* UserPreferencesViewModel.swift */,
+			);
+			name = "ViewModels";
+			sourceTree = "<group>";
+		};
+		F867080DDDCAA8CC74A91BE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA3700F7B54337AE5320120C /* Transactions */,
+				F711880A871CC5794694009C /* Cards */,
+				86747C821ACA69F74354D0E2 /* Budget */,
+				660B0A024FB0ABBF54167C28 /* Auth */,
+				87C70582996E9ED1DE66C380 /* Settings */,
+				E161DB045FADEB8F85E0E676 /* Dashboard */,
+				9F8525462A803D08BD5BA170 /* Payoff */,
+			);
+			name = "Views";
+			sourceTree = "<group>";
+		};
+		660B0A024FB0ABBF54167C28 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B003D1E42CCDC531297DC /* LoginView.swift */,
+			);
+			name = "Auth";
+			sourceTree = "<group>";
+		};
+		86747C821ACA69F74354D0E2 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				1FAC3A9F4DC345003411D672 /* AddEditCategoryView.swift */,
+				A04E6AA280EECB9042E2D617 /* BudgetView.swift */,
+			);
+			name = "Budget";
+			sourceTree = "<group>";
+		};
+		F711880A871CC5794694009C /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				E76ED3537060D031347801CD /* AddEditCardView.swift */,
+				3B07FCE3E3934318CD1B7F16 /* CardListView.swift */,
+			);
+			name = "Cards";
+			sourceTree = "<group>";
+		};
+		E161DB045FADEB8F85E0E676 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3ECDBB18658E1BBD05BF918B /* DashboardView.swift */,
+			);
+			name = "Dashboard";
+			sourceTree = "<group>";
+		};
+		9F8525462A803D08BD5BA170 /* Payoff */ = {
+			isa = PBXGroup;
+			children = (
+				9E993A172C23AED66B43B23A /* PayoffView.swift */,
+			);
+			name = "Payoff";
+			sourceTree = "<group>";
+		};
+		87C70582996E9ED1DE66C380 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6D09E9042F76E3D335014292 /* SettingsView.swift */,
+			);
+			name = "Settings";
+			sourceTree = "<group>";
+		};
+		CA3700F7B54337AE5320120C /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				FC549922B4D6710077A3DA36 /* AddEditTransactionView.swift */,
+				B203F163F3878346B86E1F13 /* TransactionListView.swift */,
+			);
+			name = "Transactions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730950AD798A77AD508AA9E2 /* iSave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD8AF6241EA4D2BCB89A821 /* Build configuration list for PBXNativeTarget "iSave" */;
+			buildPhases = (
+				7EE609159AC086BAB15FF998 /* Sources */,
+				A9E872B0C4F3AB11D258C39F /* Frameworks */,
+				A2892AFC2D88060C0AA91373 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = "iSave";
+			productName = "iSave";
+			productReference = 2678F494CC29BA8E2F0C4643 /* iSave.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1781F676DEDF5767F3243DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					730950AD798A77AD508AA9E2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 312AEC4A30A709044C1B251A /* Build configuration list for PBXProject "iSave" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 0A85897F1A32FE9B91C081CD;
+			productRefGroup = B88D7E26791946AEFDCC8BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730950AD798A77AD508AA9E2 /* iSave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2892AFC2D88060C0AA91373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F893ABF8DE2704294E63B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EE609159AC086BAB15FF998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949C8717AA1913D010A1E945 /* ContentView.swift in Sources */,
+				12CBDB1EC5BE141C2E2C9912 /* PayoffEngine.swift in Sources */,
+				9B104B9974C97A476C9820AA /* Models.swift in Sources */,
+				A0AB361208BA39308D5C3C0E /* PlaidManager.swift in Sources */,
+				36BD0C1968766DFFF8CE27D0 /* APIService.swift in Sources */,
+				C7C1B466320F05ED1FA4480C /* KeychainHelper.swift in Sources */,
+				4620F8285932012E1D9163C2 /* AuthViewModel.swift in Sources */,
+				F8C73FE5B312AFE9E1065B65 /* CategoryViewModel.swift in Sources */,
+				10F9694CE0A97191CF011DDE /* CreditCardViewModel.swift in Sources */,
+				A8BE343042D3427C869F750C /* TransactionViewModel.swift in Sources */,
+				9F0FAEEFE4F17653AF2DAA87 /* UserPreferencesViewModel.swift in Sources */,
+				037540D805A5BCD00A0890C4 /* LoginView.swift in Sources */,
+				D242AEF9420576A176331777 /* AddEditCategoryView.swift in Sources */,
+				F31EFFCACFCD4306B5B47D8F /* BudgetView.swift in Sources */,
+				A2474DE1749464CE8DC4D0A9 /* AddEditCardView.swift in Sources */,
+				0BBC6FE2DB46B54EDBAFB96D /* CardListView.swift in Sources */,
+				C0E5E24F6831E3B6E5931890 /* DashboardView.swift in Sources */,
+				20959B52307F75F6AF1FB292 /* PayoffView.swift in Sources */,
+				9F8CD4408757E2747961F55E /* SettingsView.swift in Sources */,
+				E5173AA3DF606C0BFF9DA973 /* AddEditTransactionView.swift in Sources */,
+				D1C42E7A7BC90245E910AAC4 /* TransactionListView.swift in Sources */,
+				3E26ACA447F507FF4D737535 /* iSaveApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B21FEA8B361C5074C004CF32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E292DFB9EE8E9971CDBFCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF4B2DC1233899DE8D2EC672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iSave/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isave.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CE39D1FA58E3422FA9594AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iSave/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isave.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		312AEC4A30A709044C1B251A /* Build configuration list for PBXProject "iSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21FEA8B361C5074C004CF32 /* Debug */,
+				8E292DFB9EE8E9971CDBFCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD8AF6241EA4D2BCB89A821 /* Build configuration list for PBXNativeTarget "iSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF4B2DC1233899DE8D2EC672 /* Debug */,
+				9CE39D1FA58E3422FA9594AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 1781F676DEDF5767F3243DB0 /* Project object */;
+}
