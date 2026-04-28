@@ -145,6 +145,114 @@ function signToken(user) {
   );
 }
 
+// ─── Landing Page + Health Check ─────────────────────────────────────────────
+
+const LANDING_HTML = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>iSave API</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 640px;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 16px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    border-radius: 999px;
+    font-size: 13px;
+    color: #4ade80;
+    font-weight: 500;
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 8px #4ade80;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 50% { opacity: 0.4; } }
+  h1 { margin: 16px 0 8px; font-size: 32px; font-weight: 700; letter-spacing: -0.02em; }
+  .sub { color: #94a3b8; margin: 0 0 32px; font-size: 15px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8; margin: 24px 0 12px; font-weight: 600; }
+  .endpoints {
+    display: grid; gap: 6px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px;
+  }
+  .endpoints div { display: flex; gap: 12px; padding: 8px 12px; background: rgba(30, 41, 59, 0.5); border-radius: 6px; }
+  .method { color: #60a5fa; font-weight: 600; min-width: 56px; }
+  .path { color: #e2e8f0; }
+  .lock { color: #fbbf24; margin-left: auto; }
+  .footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(148, 163, 184, 0.15); color: #64748b; font-size: 13px; }
+  a { color: #60a5fa; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="badge"><span class="dot"></span> Online</span>
+  <h1>iSave API</h1>
+  <p class="sub">Backend for the iSave SwiftUI budgeting + payoff app. Built with Express on Vercel, backed by Neon Postgres and Plaid.</p>
+
+  <h2>Auth</h2>
+  <div class="endpoints">
+    <div><span class="method">POST</span><span class="path">/auth/register</span></div>
+    <div><span class="method">POST</span><span class="path">/auth/login</span></div>
+    <div><span class="method">GET</span><span class="path">/auth/me</span><span class="lock">JWT</span></div>
+  </div>
+
+  <h2>Resources</h2>
+  <div class="endpoints">
+    <div><span class="method">CRUD</span><span class="path">/cards</span><span class="lock">JWT</span></div>
+    <div><span class="method">CRUD</span><span class="path">/transactions</span><span class="lock">JWT</span></div>
+    <div><span class="method">CRUD</span><span class="path">/categories</span><span class="lock">JWT</span></div>
+    <div><span class="method">GET/PUT</span><span class="path">/preferences</span><span class="lock">JWT</span></div>
+  </div>
+
+  <h2>Plaid</h2>
+  <div class="endpoints">
+    <div><span class="method">POST</span><span class="path">/plaid/create-link-token</span><span class="lock">JWT</span></div>
+    <div><span class="method">POST</span><span class="path">/plaid/exchange-token</span><span class="lock">JWT</span></div>
+    <div><span class="method">POST</span><span class="path">/plaid/sync</span><span class="lock">JWT</span></div>
+  </div>
+
+  <p class="footer">Health check: <a href="/health">/health</a> &middot; iOS client connects via <code>APIService.baseURL</code></p>
+</div>
+</body>
+</html>`;
+
+app.get('/', (_req, res) => {
+  res.set('Content-Type', 'text/html; charset=utf-8').send(LANDING_HTML);
+});
+
+app.get('/health', (_req, res) => {
+  res.json({ status: 'ok', service: 'iSave API', time: new Date().toISOString() });
+});
+
 // ─── Auth Routes ─────────────────────────────────────────────────────────────
 
 app.post('/auth/register', async (req, res) => {
