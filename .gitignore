@@ -25,6 +25,12 @@ backend/npm-debug.log*
 backend/yarn-debug.log*
 backend/yarn-error.log*
 
+# Web frontend
+isave-web/node_modules/
+isave-web/.next/
+isave-web/.vercel/
+isave-web/homepage-check.png
+
 # Swift Package Manager
 .swiftpm/
 Package.resolved
