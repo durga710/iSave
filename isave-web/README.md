@@ -7,7 +7,7 @@ Marketing and launch website for iSave, built with Next.js 16 and deployed on Ve
 - Product-focused homepage for the iSave finance app
 - Dashboard-inspired sections for cards, transactions, budgets, payoff strategy, and settings
 - Production-safe build configuration for local and Vercel deploys
-- Optional live-app CTA wiring through `NEXT_PUBLIC_LIVE_APP_URL`
+- Default CTA wiring to the main iSave app deployment, with optional override through `NEXT_PUBLIC_LIVE_APP_URL`
 
 ## Local development
 
@@ -29,7 +29,13 @@ npm run build
 
 This app is designed to deploy directly on Vercel from the `isave-web/` directory.
 
-If you want the primary CTA buttons to open a specific production app URL, set:
+By default, the primary CTA buttons open:
+
+```bash
+https://i-save-git-main-reyghim1093-5928s-projects.vercel.app/
+```
+
+If that destination ever changes, override it with:
 
 ```bash
 NEXT_PUBLIC_LIVE_APP_URL=https://your-production-url.example

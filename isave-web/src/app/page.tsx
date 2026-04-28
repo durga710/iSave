@@ -62,10 +62,13 @@ const settingsRows = [
   { label: "Notifications", value: "Enabled" },
 ];
 
+const DEFAULT_LIVE_APP_URL =
+  "https://i-save-git-main-reyghim1093-5928s-projects.vercel.app/";
+
 export default function Home() {
-  const liveAppUrl = process.env.NEXT_PUBLIC_LIVE_APP_URL;
-  const primaryLaunchHref = liveAppUrl ?? "#launch";
-  const primaryLaunchLabel = liveAppUrl ? "Open live app" : "Jump to launch";
+  const liveAppUrl = process.env.NEXT_PUBLIC_LIVE_APP_URL ?? DEFAULT_LIVE_APP_URL;
+  const primaryLaunchHref = liveAppUrl;
+  const primaryLaunchLabel = "Open live app";
 
   return (
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -452,11 +455,9 @@ export default function Home() {
               <p className="mt-4 text-lg leading-8 text-white/65">
                 This version gives you a proper homepage, product story, live product framing, and a clean path to keep expanding into authenticated dashboards later.
               </p>
-              {!liveAppUrl ? (
-                <p className="mt-3 text-sm leading-6 text-white/50">
-                  Set `NEXT_PUBLIC_LIVE_APP_URL` in Vercel when you want the primary CTA buttons to open the production app directly.
-                </p>
-              ) : null}
+              <p className="mt-3 text-sm leading-6 text-white/50">
+                CTA buttons default to the main iSave app deployment and can be overridden with `NEXT_PUBLIC_LIVE_APP_URL` if that destination ever changes.
+              </p>
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
